@@ -8,12 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="../src/icons/uber_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Uber777</title>
   </head>
-
   <body>
     <header>
       <nav>
@@ -21,13 +21,13 @@
           <ul class="menu">
             <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
             <li class="menu_item">
-              <a href="#" class="menu_link">With your car</a>
+              <a href="#require" class="menu_link">With your car</a>
             </li>
             <li class="menu_item">
-              <a href="#" class="menu_link">With company car</a>
+              <a href="#require" class="menu_link">With company car</a>
             </li>
             <li class="menu_item">
-              <a href="#" class="menu_link">Requirements</a>
+              <a href="#requirements" class="menu_link">Requirements</a>
             </li>
             <li class="menu_item">
               <a href="#" class="menu_link">Contacts</a>
@@ -35,23 +35,30 @@
             <li class="menu_item"><a href="#" class="menu_link">Request</a></li>
           </ul>
         </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <div class="subheader">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 offset-md-1">
+            <div class="col-6 col-md-4 offset-md-1">
               <a href="#" class="subheader_logo"
                 ><img src="icons/Uber.png" alt="logo"
               /></a>
               <div class="subheader_official">Official partner Uber Moscow</div>
             </div>
-            <div class="col-md-2 offset-md-2">
+            <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
               <div class="subheader_call">call us daily</div>
               <a href="tel:84957970988" class="subheader_phone"
                 >8 495 797 09 88</a
               >
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-3">
+              <a href="tel:84957970988" class="xs-visible subheader_phone"
+                >8 495 797 09 88</a>
               <button class="subheader_btn">Request call</button>
             </div>
           </div>
@@ -61,9 +68,9 @@
     <section class="promo">
       <div class="container">
         <div class="rov">
-          <div class="col-md-10 offset-md-1">
+          <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
             <h1 class="promo_title">UBER PARTNERS COMPANY!</h1>
-            <h2 class="promo_subTitle">WE INVITE DRIVERS! ON YOUR CAR!</h2>
+            <h2 class="promo_subtitle">WE INVITE DRIVERS! ON YOUR CAR!</h2>
             <div class="promo_descr">
               UBER is a dynamic company. Company on the market occupies a
               leading position among taxi companies, the Company absolutely
@@ -92,7 +99,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">No cash, payment is automatic</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   The cost of the trip is paid by the passenger from the linked
                   bank card, i.е. there are no risks associated with the
                   carriage of cash for both the passenger and the driver, you do
@@ -106,7 +113,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">High income with guaranteed payments</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   We pay wages to the driver's personal bank card! You do not
                   need to register an LLC, individual entrepreneur, pay taxes,
                   file a declaration, pay for accounting services and maintain a
@@ -122,7 +129,7 @@
                 <h2 class="card_title">
                   Comfortable, transparent and easy connection
                 </h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   Мы подключаем дистанционно и бесплатно, Вам нет необходимости
                   приезжать к нам! Вы присылаете нам копии документов, мы
                   регистрируем Вас и присылаем данные для подключения, через 1-2
@@ -136,7 +143,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">24/7 support</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   Uber has 24/7 driver support via email. If something is not
                   clear, you can always ask a question via On-line consultation
                 </div>
@@ -150,7 +157,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">Commission 8% + BONUSES</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   У нас минимальная комиссия и мы выплачиваем бонусы за каждую
                   поездку, некоторые наши конкуренты оставляют бонусы себе. Мы
                   работаем честно и с нами водители зарабатывают больше!
@@ -165,7 +172,7 @@
                 <h2 class="card_title">
                   Work at a convenient time, no schedules
                 </h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   You just press the button to get on the line to start working,
                   when you decide to finish, press to get off the line. You can
                   work- only wake up in the morning, in the evening, on weekends
@@ -179,7 +186,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">Always a large number of orders</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   The application shows where there are currently the most
                   orders and where higher rates apply. You will not have
                   downtime and idle runs. Our passengers are always pleasant and
@@ -193,7 +200,7 @@
               </div>
               <div class="card_text">
                 <h2 class="card_title">Without checkers and stickers</h2>
-                <div class="card_subTitle">
+                <div class="card_subtitle">
                   You do not need to change the color, install "checkers" on the
                   car and paste it with stickers.
                 </div>
@@ -207,7 +214,7 @@
       <div class="container">
         <div class="textBox">Opportunities</div>
         <div class="textBox_title">Uber mobile app</div>
-        <div class="textBox_subTitle">
+        <div class="textBox_subtitle">
           Make an order, make a trip and pay its cost using your mobile phone
         </div>
         <div class="row">
@@ -258,7 +265,7 @@
       <div class="container">
         <div class="textBox">Opportunities</div>
         <div class="textBox_title">Choice is a great thing!</div>
-        <div class="textBox_subTitle">
+        <div class="textBox_subtitle">
           Order a car that suits you in style and budget
         </div>
         <div class="opportunities_bot">
@@ -269,7 +276,7 @@
         </div>
       </div>
     </section>
-    <section class="require">
+    <section class="require" id="require">
       <div class="container">
         <div class="textBox">Opportunities</div>
         <div class="textBox_title">Coditions and requirements</div>
@@ -298,7 +305,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="require_block require_block_nmb">
+            <div class="require_block require_block_nmb" id="requirements">
               <div class="require_title">CONDITIONS: on the company's car:</div>
               <ul class="require_list">
                 <li>We provide cars without collateral.</li>
@@ -344,7 +351,7 @@
       <div class="container">
         <div class="textBox">Cities</div>
         <div class="textBox_title">All over the world</div>
-        <div class="textBox_subTitle">
+        <div class="textBox_subtitle">
           We are in your city and around the world
         </div>
         <a href="#" class="worldwide_link">view all cities</a>
@@ -390,8 +397,13 @@
             <a href="#"><img src="icons/socials/WS.svg" alt="WStore"></a>
           </div>
         </div>
+        <div class="mobile-visible">
+          <a href="#" class="mobile-visible langLink">Eng</a>
+        </div>
       </div>
-      <a href="#" class="langLink">Eng</a>
+      <a href="#" class="mobile-hidden langLink">Eng</a>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

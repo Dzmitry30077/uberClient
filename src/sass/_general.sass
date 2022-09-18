@@ -1,9 +1,13 @@
 header
   position: relative
+  height: 50px
 
 nav
+  position: fixed
+  width: 100%
   height: 50px
   background-color: #212121
+  z-index: 5
 
 .menu
   display: flex
@@ -11,42 +15,41 @@ nav
   padding: 13px 70px
   margin: 0
   list-style-type: none
-
   &_link
     color: #fff
     font-size: 15px
     font-weight: 300
     text-decoration: none
-
   &_item
     border-right: 2px dotted black
-    padding-right: 65px
+    padding-right: 60px
+    &:last-child
+      border-right: none
 
 .subheader
   position: absolute
+  top: 50px
   width: 100%
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
-
   &_logo
     display: block
     margin-top: 16px
     max-width: 100%
-
+    img
+      width: 100%
   &_official
     margin-top: 6px
     opacity: 0.6
     color: #fff
     font-size: 13px
     font-weight: 400
-
   &_call
     color: #ffffff
     font-size: 12px
     font-weight: 300
     margin-top: 19px
     text-align: right
-
   &_phone
     display: block
     margin-top: 8px
@@ -56,7 +59,7 @@ nav
     text-transform: uppercase
     text-align: right
     line-height: 12px
-
+    text-decoration: none
   &_btn
     margin-top: 19px
     width: 172px
@@ -72,11 +75,13 @@ nav
     text-transform: uppercase
     +btn_hover
 
+.hamburger
+  display: none
+
 .promo
   min-height: 800px
   background: url("../img/bg/uber_bg.png") center (center / cover) no-repeat
   padding: 150px 0 135px 0
-
   &_title
     margin: 0
     color: #fff
@@ -85,8 +90,7 @@ nav
     text-transform: uppercase
     line-height: 60px
     text-align: center
-
-  &_subTitle
+  &_subtitle
     margin: 0
     color: #fff
     font-size: 36px
@@ -94,14 +98,12 @@ nav
     line-height: 36px
     margin-top: 22px
     text-align: center
-
   &_descr
     color: #fff
     font-size: 18px
     font-weight: 400
     line-height: 24px
     margin-top: 23px
-
   &_btn
     display: block
     margin: 118px auto 0 auto
@@ -138,8 +140,7 @@ nav
       font-weight: 400
       font-size: 17px
       line-height: 21px
-
-    .card_subTitle
+    .card_subtitle
       font-weight: 300
       font-size: 15px
       line-height: 21px
@@ -167,7 +168,7 @@ nav
   line-height: 48px
   text-transform: uppercase
 
-.textBox_subTitle
+.textBox_subtitle
   font-weight: 400
   font-size: 17px
   line-height: 21px
@@ -252,7 +253,7 @@ nav
     color: #070716
     &_title
       color: #fff
-    &_subTitle
+    &_subtitle
       color: #fff
   &_bot
     position: absolute
@@ -324,7 +325,7 @@ nav
   .textBox
     color: black
     background: #fff
-    &_title, &_subTitle
+    &_title, &_subtitle
       color: #fff
   &_link
     display: block
@@ -364,7 +365,7 @@ nav
       width: 32px
       height: 32px
   &_center
-    width: 399px
+    max-width: 399px
     margin: 0 auto
     display: flex
     flex-direction: column
@@ -403,6 +404,8 @@ nav
     img
       height: 26px
       margin-right: 7px
+      &:last-child
+        margin-right: 0
   .langLink
     display: block
     margin-top: 20px
@@ -413,3 +416,8 @@ nav
     text-transform: uppercase
     text-decoration: none
     color: #1FBAD6
+.xs-visible
+  display: none
+.footer
+  .mobile-visible
+      display: none
